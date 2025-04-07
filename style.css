@@ -138,6 +138,40 @@ main {
     }
   }
 }
+.section5 {
+  display: flex;
+  justify-content: space-between;
+
+  .mainS5-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      color: #e28b35;
+      animation: pulse 2.5s infinite;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .mainS5-right {
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+    img {
+      width: 80%;
+    }
+  }
+}
+footer {
+  background-color: #e28b35;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
