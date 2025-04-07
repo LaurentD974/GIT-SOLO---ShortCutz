@@ -94,6 +94,7 @@ main {
 
     h1 {
       text-align: center;
+      color: #e28b35;
       animation: pulse 2.5s infinite;
       font-size: 3em;
     }
@@ -110,7 +111,33 @@ main {
     }
   }
 }
+.section4 {
+  display: flex;
+  justify-content: left;
 
+  .mainS4-left {
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+    img {
+      width: 60%;
+    }
+  }
+  .mainS4-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      color: #e28b35;
+      animation: pulse 2.5s infinite;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
