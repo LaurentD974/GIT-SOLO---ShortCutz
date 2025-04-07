@@ -39,9 +39,11 @@ nav {
 main {
   .section1 {
     display: flex;
+    justify-content: space-between;
 
     .main-left {
       display: flex;
+      justify-content: center;
       flex-direction: column;
 
       h1 {
@@ -53,12 +55,59 @@ main {
         font-size: 1em;
       }
     }
-    /* .main-right {
+    .main-right {
+      display: flex;
+      justify-content: end;
+      align-items: self-end;
       img {
-        width: 60%;
-        align-items: flex-end;
+        width: 50%;
       }
-    } */
+    }
+  }
+}
+.section2 ul {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(226, 139, 53);
+  height: 40px;
+  align-items: center;
+  gap: 20px;
+  li {
+    transition: all 1s;
+    color: black;
+    &:hover {
+      color: red;
+      text-decoration: underline;
+      cursor: pointer;
+      scale: 1.2;
+    }
+  }
+}
+.section3 {
+  display: flex;
+  justify-content: space-between;
+
+  .mainS3-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      animation: pulse 2.5s infinite;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .mainS3-right {
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+    img {
+      width: 40%;
+    }
   }
 }
 
